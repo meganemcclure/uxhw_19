@@ -1,0 +1,47 @@
+/* CONTENT SECTION STYLING */
+.contentSection {
+    margin: 210px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.caseStudySection {
+    display: flex;
+    gap: 80px;
+}
+
+.caseStudySection img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* small desktop */
+@media only screen and (max-width: 1600px) {
+    .contentSection {
+        margin: 80px;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 1280px) {
+    .contentSection {
+        margin: 40px;
+    }
+
+    .caseStudySection {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .caseStudySection img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 414px) {
+    .caseStudySection {
+        flex-direction: column;
+    }
+}

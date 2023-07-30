@@ -1,0 +1,72 @@
+/* CONTENT SECTION STYLING */
+.designWorkSection {
+    margin: 300px 210px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.caseStudiesSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+}
+
+.caseStudy {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.caseStudy img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contentSection {
+    margin: 210px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+/* small desktop */
+@media only screen and (max-width: 1600px) {
+    .designWorkSection {
+        margin: 300px 80px;
+    }
+    .caseStudiesSection {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+    .contentSection {
+        margin: 80px;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 1280px) {
+    .contentSection {
+        margin: 40px;
+    }
+
+    .designWorkSection {
+        margin: 100px 40px 40px 40px;
+    }
+
+    .caseStudiesSection {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 414px) {
+    .caseStudiesSection {
+        grid-template-columns: 1fr;
+    }
+
+    .caseStudySection {
+        flex-direction: column;
+    }
+}
