@@ -77,8 +77,41 @@ nav {
     width: 100%;
 }
 
-#hamburgerMenuIcon {
-    display:none;
+.condensedNav {
+    /* display: none; */
+    height: 120px;
+}
+
+.condensedNavContents {
+    display: none;
+}
+
+.condensedNavContents div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.condensedNav i {
+    font-size: 40px;
+    color: var(--darkGrey);
+    padding: 40px;
+}
+
+/* .navDivider {
+    width: 100%;
+    height: 20px;
+    color: var(--darkGrey);
+} */
+
+.open {
+    background: var(--offWhite);
 }
 
 nav ul {
@@ -87,6 +120,27 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 40px;
+}
+
+.condensedNav button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.condensedNavContents ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
 .pageLink {
@@ -118,10 +172,6 @@ nav ul {
 .caseStudyLink {
     align-self: flex-end;
     justify-self: flex-end;
-}
-
-#currentPage {
-    text-decoration: underline;
 }
 
 .navSocials li {
@@ -259,14 +309,11 @@ nav ul {
 
 /* tablet */
 @media only screen and (max-width: 1280px) {
-    #hamburgerMenuIcon {
-        display: inline-block;
-        font-size: 40px;
-        color: var(--darkGrey);
-        margin: 20px;
+    .condensedNav {
+        display: block;
     }
 
-    nav ul {
+    .classicNav ul {
         display: none;
     }
 
