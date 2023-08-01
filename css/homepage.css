@@ -16,15 +16,14 @@
     object-fit: cover;
 }
 
-/* small desktop */
-@media only screen and (max-width: 1600px) {
+/* RECOMMENDED DEVICE SIZES FROM W3SCHOOLS (https://www.w3schools.com/css/css_rwd_mediaqueries.asp) */
+@media only screen and (max-width: 1200px) {
     .contentSection {
         margin: 80px;
     }
 }
 
-/* tablet */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 992px) {    
     .contentSection {
         margin: 40px;
     }
@@ -39,8 +38,7 @@
     }
 }
 
-/* mobile */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
     .caseStudySection {
         flex-direction: column;
     }

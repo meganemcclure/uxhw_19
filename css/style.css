@@ -78,8 +78,9 @@ nav {
 }
 
 .condensedNav {
+    display: none;
     z-index: 10;
-    height: 120px;
+    height: 80px;
 }
 
 .condensedNavContents {
@@ -96,12 +97,19 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
+    gap: 10px;
+}
+
+.navDivider {
+    width: 50%;
+    color: var(--darkGrey);
+    height: 10px;
 }
 
 .condensedNav i {
     font-size: 40px;
     color: var(--darkGrey);
-    padding: 40px;
+    padding: 20px;
 }
 
 .open {
@@ -110,7 +118,7 @@ nav {
 
 nav ul {
     padding: 0;
-    margin: 80px;
+    margin: 40px;
     list-style: none;
     display: flex;
     gap: 40px;
@@ -199,7 +207,7 @@ nav ul {
     justify-content: center;
     align-items: flex-start;
     row-gap: 40px;
-    max-width: 800px;
+    width: 80%;
 }
 
 .dividerLine {
@@ -209,9 +217,8 @@ nav ul {
 }
 
 .heroSection img {
-    height: 500px;
-    width: 500px;
-    border-radius: 500px;
+    width: 30%;
+    border-radius: 100%;
 }
 
 .downIconContainer {
@@ -296,30 +303,26 @@ footer span h4:hover {
     display: none;
 }
 
-/* small desktop */
-@media only screen and (max-width: 1600px) {
+/* RECOMMENDED DEVICE SIZES FROM W3SCHOOLS (https://www.w3schools.com/css/css_rwd_mediaqueries.asp) */
+/* small desktop screens */
+@media only screen and (max-width: 1200px) {
     .heroSection {
         gap: 80px;
     }
 
-    .heroSection img {
-        height: 400px;
-        width: 400px;
-    }
-
-    /* h1 { font-size: 96px; }
+    h1 { font-size: 96px; }
     
     h2 { font-size: 48px; }
     
     h3 { font-size: 36px; }
     
-    h4 { font-size: 32px; }
+    h4 { font-size: 28px; }
     
-    h5 { font-size: 28px; } */
+    h5 { font-size: 28px; }
 }
 
 /* tablet */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 992px) {    
     .condensedNav {
         display: block;
     }
@@ -336,9 +339,13 @@ footer span h4:hover {
         margin: 80px 0px 0px 0px;
     }
 
-    .heroSection img {
-        height: 250px;
-        width: 250px;
+    .heroSection span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 10px;
+        width: 80%;
     }
 
     #githubIconBody {
@@ -364,30 +371,32 @@ footer span h4:hover {
         justify-content: center;
     }
 
-    /* h1 { font-size: 48px; }
-    
+    h1 { font-size: 48px; }
+
     h2 { font-size: 36px; }
-    
+
     h3 { font-size: 32px; }
-    
+
     h4 { font-size: 28px; }
-    
-    h5 { font-size: 26px; } */
+
+    h5 { font-size: 26px; }
 }
 
-/* mobile */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
     .heroSection {
-        height: calc(100vh - 80px - 127px);
+        height: calc(100vh - 80px - 87px);
         padding: 0px 20px;
-    }
-
-    .heroSection img {
-        height: 200px;
-        width: 200px;
     }
 
     #githubIconBody {
         font-size: 150px;
     }
+
+    .downIconContainer {
+        padding: 20px 0px;
+    }
+
+    a { font-size: 16px; }
+
+    p { font-size: 16px; }
 }
