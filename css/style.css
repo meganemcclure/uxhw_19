@@ -78,7 +78,7 @@ nav {
 }
 
 .condensedNav {
-    /* display: none; */
+    z-index: 10;
     height: 120px;
 }
 
