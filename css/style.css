@@ -176,16 +176,16 @@ nav ul {
     justify-self: flex-end;
 }
 
-.navSocials li {
+.inlineSocials li {
     display: flex;
     column-gap: 20px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
-#githubIcon, #linkedinIcon {
+.inlineIcon {
     font-size: 40px;
-    color: var(--darkGrey);
+    padding-bottom: 5px;
 }
 
 /* HERO STYLING */
@@ -290,17 +290,22 @@ footer span h4:hover {
     cursor: pointer;
 }
 
-.footerLink {
-    color: var(--offWhite);
+.footerSocials {
+    row-gap: 20px;
 }
 
-#linkedinIconFooter, #emailLogoFooter {
-    font-size: 40px;
-    color: var(--offWhite);
+footer .inlineSocials li {
+    padding: 10px;
 }
 
-.mobile {
-    display: none;
+.footerDivider {
+    height: 2px;
+    width: 100%;
+    background-color: var(--offWhite);
+}
+
+.footerColor {
+    color: var(--offWhite);
 }
 
 /* RECOMMENDED DEVICE SIZES FROM W3SCHOOLS (https://www.w3schools.com/css/css_rwd_mediaqueries.asp) */
@@ -316,7 +321,7 @@ footer span h4:hover {
     
     h3 { font-size: 36px; }
     
-    h4 { font-size: 28px; }
+    h4 { font-size: 32px; }
     
     h5 { font-size: 28px; }
 }
@@ -362,13 +367,6 @@ footer span h4:hover {
 
     .desktop {
         display: none;
-    }
-
-    .mobile {
-        display: flex;
-        column-gap: 20px;
-        align-items: flex-start;
-        justify-content: center;
     }
 
     h1 { font-size: 48px; }
